@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="mountain.png" type="image/x-icon">
+    <title>mountaincro</title>
+    
+</head>
+<body>
+    <header id="header">
+        <img src="logo.png" alt="logo" id="header-img">
+        <nav id="nav-bar">
+            <a href="#products" id="nav-link">products</a>
+            <a href="#etsy_trends" id="nav-link">etsy trends</a>
+            <a href="#form" id="nav-link">order form</a>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2 class="products-heading">Keep warm and cozy this winter!</h2>
+            <p class="products-subtitle">All products are handmade and can be customized  with your choice of color, materials, or accesories!</p>
+            <ul class="products-list">
+                <li id="products-list-hats">Hats</li>
+                <li id="products-list-mittens">Mittens</li>
+                <li id="products-list-scarves">Scarves</li>
+                <li id="products-list-arm_warmers">Arm Warmers</li>
+            </ul>
+            
+        </section>
+        <section class="video" id="etsy_trends">
+            <iframe id="video" width="600" height="400" src="https://www.youtube.com/embed/05xedpD-tyE" title="NEW Etsy Trends and Products Guaranteed to Sell in 2023 🎉" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+            </iframe>
+        </section>
+        <section class="form">
+            <form action="https://www.freecodecamp.com/email-submit" method="get" id="form">
+                <fieldset class="order-form">
+                    <legend class="order-form-title">Place Your Order Here!</legend>
+
+                    <div class="wrapper">
+                        <label for="first-name" class="customer">First Name: </label><input type="text" name="first-name" id="first-name" placeholder="Jane" class="customer-input" required><br>
+                        <label for="last-name" class="customer">Last Name: </label><input type="text" name="last-name" id="last-name" placeholder="Doe" class="customer-input" required><br>
+                        <label for="email" class="customer">Email: </label><input type="email" name="email" id="email" placeholder="janedoe@gmail.com" class="customer-input" required><br>
+                    </div>
+                    
+                    <fieldset class="item-choice">
+                        <legend class="item-choice-title">Which item(s) would you like to order?</legend>
+                        <input type="checkbox" name="hat" id="hat"><label for="hat" class="item-choice-option">Hat</label><br>
+                        <input type="checkbox" name="mittens" id="mittens"><label for="mittens" class="item-choice-option">Mittens</label><br>
+                        <input type="checkbox" name="scarf" id="scarf"><label for="scarf" class="item-choice-option">Scarf</label><br>
+                        <input type="checkbox" name="arm-warmers" id="arm-warmers"><label for="arm-warmers" class="item-choice-option">Arm Warmers</label><br>
+                        <br>
+
+                        <label for="options">Customizations: </label><br>
+                        <textarea name="options" id="options" cols="30" rows="10">Enter any customization options here (i.e. color, pom size/color, material)...</textarea>
+                    </fieldset>
+                    <label for="referral" class="referral-label">How did you hear about us? (optional)</label>
+                    <select name="referral" id="referral-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="search">Search Engine</option>
+                        <option value="friend">Friend/Family</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other...</option>
+                    </select>
+                </fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <p class="order-form-subtitle">*An invoice will be emailed to you with the final price of your item. Payment required on delivery of item.</p>
+
+        </section>
+        <a href="#products" class="top-link">Back to Top</a>
+
+    </main>
+    <footer>
+        <p>&copy;2023 mountaincro LLC. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

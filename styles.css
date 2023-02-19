@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+/* || VARIABLES */
+:root {
+    --FONT-SIZE: 1.6rem;
+    --FONT-SIZE-L: 2.2rem;
+    --FONT-SIZE-XL: 3rem;
+
+    --BG-COLOR-LIGHT: hsl(0, 81%, 80%);
+    --BG-COLOR-DARK: hsl(0, 81%, 72%);
+    --BG-COLOR-HIGHLIGHT: hsla(0, 2%, 62%, 0.589);
+
+    --FONT-COLOR-LIGHT: whitesmoke;
+    --FONT-COLOR-DARK: #333;
+
+    --TEXT-SHADOW: 3px 3px 5px var(--FONT-COLOR-LIGHT), -3px -3px 5px var(--FONT-COLOR-LIGHT);
+}
+
+
+/* || GENERAL STYLES */
+
+html {
+    background-color: var(--BG-COLOR-LIGHT);
+    font-family: 'Shantell sans', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    color: var(--FONT-COLOR-DARK);
+}
+
+
+/* || HEADER */
+
+header {
+    background-color: var(--BG-COLOR-DARK);
+    display: grid;
+    font-size: var(--FONT-SIZE-L);
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: var(--FONT-COLOR-LIGHT);
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+#nav-link {
+    padding: 0 1rem;
+}
+
+#nav-link:hover {
+    background-color: var(--BG-COLOR-LIGHT);
+}
+
+/* || PRODUCTS */
+
+#products {
+    display: flex;
+    background-image: url(stock_winter_pic.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+
+.products-heading {
+    font-size: var(--FONT-SIZE-XL);
+    color: var(--FONT-COLOR-LIGHIT);
+    text-shadow: var(--TEXT-SHADOW);
+    padding: 1.8rem;
+    margin-top: 300px;
+}
+
+.products-subtitle {
+    font-size: var(--FONT-SIZE-L);
+    text-shadow: var(--TEXT-SHADOW);
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+.products-list {
+    list-style-type: none;
+    font-size: var(--FONT-SIZE-L);
+    text-shadow: var(--TEXT-SHADOW);
+    text-align: center;
+}
+
+.products-list li {
+    padding: 1rem;
+}
+
+/* || ETSY TRENDS */
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1rem;
+}
+
+/* || Order Form */
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+    font-size: var(--FONT-SIZE);
+}
+
+.order-form {
+    border: 5px double gray;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+legend {
+    text-align: center;
+    padding: .2rem .4rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.customer {
+    padding-left: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.customer-input {
+    width: 100%;
+    margin: .5rem 1rem;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: .6rem;
+}
+
+.item-choice {
+    border: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2rem;
+    padding: 0 0 1rem 1rem;
+}
+
+.item-choice-option {
+    margin-left: .6rem;
+}
+
+textarea {
+    margin-top: .6rem;
+}
+
+.referral-label {
+    padding-left: .6rem;;
+}
+
+button {
+    font-family: inherit;
+    padding: .6rem;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--BG-COLOR-DARK);
+    text-shadow: var(--TEXT-SHADOW);
+    margin-bottom: .6rem;
+}
+button:hover {
+    background-color: var(--BG-COLOR-HIGHLIGHT);
+    cursor: pointer;
+}
+
+.order-form-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.top-link {
+    font-size: var(--FONT-SIZE);
+    position: relative;
+    width: 100px;
+    left: calc(50% - 50px);
+}
+
+
+/* || FOOTER */
+
+footer {
+    width: 100%;
+    background-color: var(--BG-COLOR-DARK);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: var(--FONT-SIZE);
+}
